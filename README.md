@@ -17,7 +17,7 @@ cd /C/Users/dev/projects
 Once you're in the directory shown above, type in ```git clone ``` and paste in the url you just copied to your clipboard, and then hit enter. 
 
 ```bash
-git clone https://github.com/stuller/ForgeGitHubFlow.git
+git clone <paste url from clipboard here>
 ```
 
 You may be asked to enter your credentials.  Once you've provided those (if asked) you'll see it downloading the repo.  Once the download has finished, you'll want to change directory (cd) into the new repo directory.  
@@ -33,7 +33,10 @@ If you type in ```git remote -v``` into your terminal right now, you should see 
 
 What we want to do is add a remote that will allow you to connect to the team repo so that you can always get the latest code.  We'll call that remote "team".  We need the url for the team repo to do that.  So go back to the team repo on GitHub, look for that Clone/Download button and copy the url, just like you did before on your personal fork.  Now go back to your terminal and type in:
 
-```git remote add team <paste the team repo url here>```
+```bash
+git remote add team paste_the_team_repo_url_here
+```
+If you don't have your terminal set up to paste on right-click, you can 
 
 Now if you type in ```git remote -v``` you should see that "origin" points to your personal fork, and "team" points to your team's shared repo. 
 
