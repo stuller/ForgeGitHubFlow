@@ -7,7 +7,7 @@ Practice Repo for Forge Team's GitHub flow
 Fork this repo.  You can do that by clicking on the Fork button in the upper right area of this page.  Forking basically makes a copy of this repo in your own space.  It's just a copy though, just a snapshot in time.  So updates to this repo won't automatically show up in the forked repo in your own space.
 
 ## Step 2 - Getting Set Up: Clone your fork
-Go to your fork of the repo, which you can find at github.com/<your username>/ForgeGitHubFlow.  There will be a green button there that says "Clone/Download".  When you click on it, it will expand a little area that has a url in a field and a clipboard icon.  Click on the clipboard icon to copy the url to your clipboard.
+Go to your fork of the repo, which you can find at ```github.com/<your username>/ForgeGitHubFlow```.  There will be a green button there that says "Clone/Download".  When you click on it, it will expand a little area that has a url in a field and a clipboard icon.  Click on the clipboard icon to copy the url to your clipboard.
 
 Now go to your git bash or terminal window.  Use cd to navigate to the directory you want to download the repo into on your computer.  For Forge repos, this will always be:
 ```bash
@@ -43,13 +43,26 @@ Now if you type in ```git remote -v``` you should see that "origin" points to yo
 # Workflow
 
 ## Before you start making code changes - Fetching and Rebasing
-Before you get started on any code change, you should fetch the latest changes from the team repo to make sure you're starting with code that is already up to date.  To do that, type in ```git fetch team```.  If there are changes, you'll see some lines in the terminal that say that the remote is counting, compressing and unpacking objects.  Right now your machine has fetched those changes, but it hasn't updated your local with them yet - it's kind of put them off to the side.  To do that, we're going to rebase - which will merge any changes from the team repo into your local.   (you won't need to rebase if fetching didn't count, compress or unpack anything - that means you are already up to date) At this point, you're probably still in your master branch, since we're just getting started.  You should be able to see that from the terminal line - it'll be in parenthesis.  We want to make sure that your master branch gets updated to the team master branch, so to do that, we'll type in 
+Before you get started on any code change, you should fetch the latest changes from the team repo to make sure you're starting with code that is already up to date.  To do that, type in ```git fetch team```.  If there are changes, you'll see something like this:
 
-```git rebase team/master```
+```bash
+$ git fetch team
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 9 (delta 3), reused 9 (delta 3), pack-reused 0
+Unpacking objects: 100% (9/9), done.
+From https://github.com/stuller/ForgeGitHubFlow
+ * [new branch]      master     -> team/master
+```
+Right now your machine has fetched those changes, but it hasn't updated your local with them yet - it's kind of put them off to the side.  To do that, we're going to rebase - which will merge any changes from the team repo into your local.   (you won't need to rebase if fetching didn't count, compress or unpack anything - that means you are already up to date) At this point, you're probably still in your master branch, since we're just getting started.  You should be able to see that from the terminal line - it'll be in parenthesis.  We want to make sure that your master branch gets updated to the team master branch, so to do that, we'll type in 
+
+```bash
+git rebase team/master
+```
 
 You'll see a message that looks something like:
 
-```
+```bash
 First, rewinding head to replay your work on top of it...
 Fast-forwarded master to team/master
 ```
