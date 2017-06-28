@@ -34,7 +34,7 @@ If you type in ```git remote -v``` into your terminal right now, you should see 
 What we want to do is add a remote that will allow you to connect to the team repo so that you can always get the latest code.  We'll call that remote "team".  We need the url for the team repo to do that.  So go back to the team repo on GitHub, look for that Clone/Download button and copy the url, just like you did before on your personal fork.  Now go back to your terminal and type in:
 
 ```bash
-git remote add team paste_the_team_repo_url_here
+git remote add team <paste the team repo url here>
 ```
 If you don't have your terminal set up to paste on right-click, you can 
 
