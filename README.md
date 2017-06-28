@@ -85,3 +85,51 @@ Switched to a new branch 'JIRA-123-fix-css-on-menu'
 stuller@MN-STULLER-L MINGW64 /C/Users/dev/projects/ForgeGitHubFlow (JIRA-123-fix-css-on-menu)
 $
 ```
+## Workflow 3. Write some code!
+Now you're ready to start coding.  If a story takes you more than one day to complete, you should remember to do a fetch and rebase each morning.  It's also a good idea to rebase anytime someone else's code is merged into the team repo.
+
+```bash
+git fetch team
+git rebase team/master
+```
+If you've already made code changes but haven't committed them yet, you might see a message like this after you run the rebase command:
+
+```bash
+stuller@MN-STULLER-L MINGW64 /C/Users/dev/projects/ForgeGitHubFlow (JIRA-123-fix-css-on-menu)
+$ git rebase team/master
+Cannot rebase: You have unstaged changes.
+Please commit or stash them.
+```
+You'll need to commit those changes before you can rebase. First, you'll probably want to run this command to see which files have changed:
+
+```bash
+git status
+```
+There are a few commands you can use to add files to a commit.
+This one will add all changes to the commit:
+
+```bash
+git add .
+```
+
+This one will add a specific file to the commit:
+
+```bash
+git add path/to/the/file/you/want/to/commit.html
+```
+
+This one will add all the files in an entire directory to the commit (in this case, the "file" directory)
+
+```bash
+git add path/to/the/file
+```
+
+After you've added the files, you still need to commit them. The commit command also includes a commit message (the words that follow -m).  The commit message should be a brief sentence about what you changed in the commit.
+
+```bash
+git commit -m Added css to prevent overlapping text on menu
+```
+
+
+
+
