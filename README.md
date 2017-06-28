@@ -130,6 +130,31 @@ After you've added the files, you still need to commit them. The commit command 
 git commit -m Added css to prevent overlapping text on menu
 ```
 
+## Workflow 4.  I'm done writing code, now what?
+
+1. Make sure you've tested your code!
+2. Run the add and commit commands
+3. Fetch and rebase - this is important to avoid merge conflicts on your pull request.
+4. If rebasing merged in fresh changes from the team repo, test your code again!! You want to make sure what you did still works after the updates from the team repo.
+5. Push the code to your personal fork (origin)
+
+This command will push your commit to your personal fork on GitHub:
+
+```bash
+git push JIRA-123-fix-css-on-menu
+```
+You should see a responds that shows your changes getting pushed up;
+
+```bash
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 303 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/stuller/ForgeGitHubFlow.git
+   74d2f7d..3a21d23  JIRA-123-fix-css-on-menu -> JIRA-123-fix-css-on-menu
+```
 
 
 
