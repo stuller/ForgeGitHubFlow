@@ -19,3 +19,15 @@ What we want to do is add a remote that will allow you to connect to the team re
 ```git remote add team <paste the team repo url here>```
 
 Now if you type in ```git remote -v``` you should see that "origin" points to your personal fork, and "team" points to your team's shared repo. 
+
+## Step 4 - Fetching and Rebasing
+Before you get started on any code change, you should fetch the latest changes from the team repo to make sure you're starting with code that is already up to date.  To do that, type in ```git fetch team```.  If there are changes, you'll see some lines in the terminal that say that the remote is counting, compressing and unpacking objects.  Right now your machine has fetched those changes, but it hasn't updated your local with them yet - it's kind of put them off to the side.  To do that, we're going to rebase - which will merge any changes from the team repo into your local.  At this point, you're probably still in your master branch, since we're just getting started.  You should be able to see that from the terminal line - it'll be in parenthesis.  We want to make sure that your master branch gets updated to the team master branch, so to do that, we'll type in 
+
+```git rebase team/master```
+
+You'll see a message that looks something like:
+
+```
+First, rewinding head to replay your work on top of it...
+Fast-forwarded master to team/master
+```
