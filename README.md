@@ -143,7 +143,7 @@ This command will push your commit to your personal fork on GitHub:
 ```bash
 git push JIRA-123-fix-css-on-menu
 ```
-You should see a responds that shows your changes getting pushed up;
+You should see a responds that shows your changes getting pushed up:
 
 ```bash
 Counting objects: 3, done.
