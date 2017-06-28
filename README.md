@@ -1,6 +1,8 @@
 # ForgeGitHubFlow
 Practice Repo for Forge Team's GitHub flow
 
+# Getting Set Up
+
 ## Step 1 - Getting Set Up: Fork the repo
 Fork this repo.  You can do that by clicking on the Fork button in the upper right area of this page.  Forking basically makes a copy of this repo in your own space.  It's just a copy though, just a snapshot in time.  So updates to this repo won't automatically show up in the forked repo in your own space.
 
@@ -20,7 +22,9 @@ What we want to do is add a remote that will allow you to connect to the team re
 
 Now if you type in ```git remote -v``` you should see that "origin" points to your personal fork, and "team" points to your team's shared repo. 
 
-## Step 4 - Fetching and Rebasing
+# Workflow
+
+## Before you start making code changes - Fetching and Rebasing
 Before you get started on any code change, you should fetch the latest changes from the team repo to make sure you're starting with code that is already up to date.  To do that, type in ```git fetch team```.  If there are changes, you'll see some lines in the terminal that say that the remote is counting, compressing and unpacking objects.  Right now your machine has fetched those changes, but it hasn't updated your local with them yet - it's kind of put them off to the side.  To do that, we're going to rebase - which will merge any changes from the team repo into your local.   (you won't need to rebase if fetching didn't count, compress or unpack anything - that means you are already up to date) At this point, you're probably still in your master branch, since we're just getting started.  You should be able to see that from the terminal line - it'll be in parenthesis.  We want to make sure that your master branch gets updated to the team master branch, so to do that, we'll type in 
 
 ```git rebase team/master```
@@ -31,3 +35,4 @@ You'll see a message that looks something like:
 First, rewinding head to replay your work on top of it...
 Fast-forwarded master to team/master
 ```
+Fetching and rebasing is something you should do often.  Specifically - at the beginning of each day, or any time you know someone else's code has been merged into the team repo.  You'll also do it again before you push any of your own code.  Fetching and rebasing often will help prevent merge conflicts.
