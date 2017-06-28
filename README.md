@@ -42,7 +42,7 @@ Now if you type in ```git remote -v``` you should see that "origin" points to yo
 
 # Workflow
 
-## Before you start making code changes - Fetching and Rebasing
+## Workflow 1. Before you start making code changes - Fetching and Rebasing
 Before you get started on any code change, you should fetch the latest changes from the team repo to make sure you're starting with code that is already up to date.  To do that, type in ```git fetch team```.  If there are changes, you'll see something like this:
 
 ```bash
@@ -67,3 +67,21 @@ First, rewinding head to replay your work on top of it...
 Fast-forwarded master to team/master
 ```
 Fetching and rebasing is something you should do often.  Specifically - at the beginning of each day, or any time you know someone else's code has been merged into the team repo.  You'll also do it again before you push any of your own code.  Fetching and rebasing often will help prevent merge conflicts.
+
+## Workflow 2. Creating a new branch for your task
+Any time you start working on a new story, you'll want to create a new git branch for it.  That will help you keep work on different stories separate.  Preferably, the branch name should include the JIRA story id to help with tracking later.  To create a new branch, you'll use this command, where you'll replace JIRA-123... with whatever you want to name your branch:
+
+```bash
+git checkout -b JIRA-123-fix-css-on-menu
+```
+
+This command is a bit of shorthand - it creates the branch AND checks it out for you, so afterwards you'll notice that you've already been put in that new branch.  You can see from the response that you were on the master branch when you started, and now you've been moved into the new branch:
+
+```bash
+stuller@MN-STULLER-L MINGW64 /C/Users/dev/projects/ForgeGitHubFlow (master)
+$ git checkout -b JIRA-123-fix-css-on-menu
+Switched to a new branch 'JIRA-123-fix-css-on-menu'
+
+stuller@MN-STULLER-L MINGW64 /C/Users/dev/projects/ForgeGitHubFlow (JIRA-123-fix-css-on-menu)
+$
+```
