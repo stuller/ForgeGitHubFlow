@@ -138,10 +138,10 @@ git commit -m Added css to prevent overlapping text on menu
 4. If rebasing merged in fresh changes from the team repo, test your code again!! You want to make sure what you did still works after the updates from the team repo.
 5. Push the code to your personal fork (origin)
 
-This command will push your commit to your personal fork on GitHub:
+This command will push your commit to your personal fork on GitHub.  This command means "push the committed changes in this branch to origin (my personal fork)":
 
 ```bash
-git push JIRA-123-fix-css-on-menu
+git push origin JIRA-123-fix-css-on-menu
 ```
 You should see a response that shows your changes getting pushed up:
 
