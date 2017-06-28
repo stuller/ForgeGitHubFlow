@@ -9,7 +9,12 @@ Fork this repo.  You can do that by clicking on the Fork button in the upper rig
 ## Step 2 - Getting Set Up: Clone your fork
 Go to your fork of the repo, which you can find at github.com/<your username>/ForgeGitHubFlow.  There will be a green button there that says "Clone/Download".  When you click on it, it will expand a little area that has a url in a field and a clipboard icon.  Click on the clipboard icon to copy the url to your clipboard.
 
-Now go to your git bash or terminal window.  Use cd to navigate to the directory you want to download the repo into on your computer. Type in ```git clone ``` and paste in the url you just copied to your clipboard, and then hit enter. You may be asked to enter your credentials.  Once you've provided those (if asked) you'll see it downloading the repo.  Once the download has finished, you'll want to change into the repo directory.  You can do that by typing in```cd ForgeGitHubFlow```.
+Now go to your git bash or terminal window.  Use cd to navigate to the directory you want to download the repo into on your computer.  For Forge repos, this will always be:
+```
+cd /C/Users/dev/projects
+```
+
+Once you're in the directory shown above, type in ```git clone ``` and paste in the url you just copied to your clipboard, and then hit enter. You may be asked to enter your credentials.  Once you've provided those (if asked) you'll see it downloading the repo.  Once the download has finished, you'll want to change into the repo directory.  You can do that by typing in```cd ForgeGitHubFlow```.
 
 ## Step 3 - Getting Set Up: Set up your remotes
 The code that you just downloaded is your local.  In our flow, you'll start by downloading the latest code updates from our team repo, then you'll be making code changes to your local, and then uploading those to your personal fork (which is called origin).  Then, you'll be making a pull request from your fork to the team repo, where it will be reviewed by a team member and merged.
