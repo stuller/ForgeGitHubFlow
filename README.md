@@ -156,5 +156,8 @@ To https://github.com/stuller/ForgeGitHubFlow.git
    74d2f7d..3a21d23  JIRA-123-fix-css-on-menu -> JIRA-123-fix-css-on-menu
 ```
 
+## Workflow 5. Making a Pull Request
+So now you've completed your code work and you've made sure you have the latest team changes merged with it, and it's been pushed up to your personal fork (origin).  The next step is making a pull request.  To do that, view your personal fork on the GitHub website.
+
 
 
