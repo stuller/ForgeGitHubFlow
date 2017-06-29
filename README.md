@@ -126,7 +126,7 @@ git add path/to/the/file
 After you've added the files, you still need to commit them. The commit command also includes a commit message (the words that follow -m).  The commit message should be a brief sentence about what you changed in the commit.
 
 ```bash
-git commit -m Added css to prevent overlapping text on menu
+git commit -m "Added css to prevent overlapping text on menu"
 ```
 
 ## Workflow 4.  I'm done writing code, now what?
