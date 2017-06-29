@@ -138,7 +138,7 @@ git commit -m Added css to prevent overlapping text on menu
 4. If rebasing merged in fresh changes from the team repo, test your code again!! You want to make sure what you did still works after the updates from the team repo.
 5. Push the code to your personal fork (origin)
 
-This command will push your commit to your personal fork on GitHub.  This command means "push the committed changes in this branch to origin (my personal fork)":
+This command will push your commit to your personal fork on GitHub.  This command means "push the committed changes in this branch (JIRA-123-fix-css-on-menu) to origin (my personal fork)":
 
 ```bash
 git push origin JIRA-123-fix-css-on-menu
@@ -157,7 +157,7 @@ To https://github.com/stuller/ForgeGitHubFlow.git
 ```
 
 ## Workflow 5. Making a Pull Request
-So now you've completed your code work and you've made sure you have the latest team changes merged with it, and it's been pushed up to your personal fork (origin).  The next step is making a pull request.  To do that, view your personal fork on the GitHub website.
+So now you've completed your code work and you've made sure you have the latest team changes merged with it, and it's been pushed up to your personal fork (origin).  The next step is making a pull request so that another team member can review your code and merge it into the team repo.  To do that, view your personal fork on the GitHub website.
 
 
 
