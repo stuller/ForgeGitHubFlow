@@ -166,11 +166,18 @@ Below this area, you can also see diffs of your code changes.  It's a good idea 
 
 Once you've finished writing your message, go ahead and click the Create pull request button.  Now a pull request has been created, and team members will be notified on Slack through our GitHub integration that your code is ready for them to review and merge.
 
-## Workflow 5. Reviewing and merging a team member's code
+## Workflow 6. Reviewing and merging a team member's code
 If you're committing code to a team repo, you'll probably also be reviewing and merging pull requests for your team members as well. The only rule is that you should never merge your own pull requests! To review someone else's code, you can go to the team repo and click on the pull requests tab.  Select the pull request you want to review from the list.  You'll be able to see the comments for the pull request and by clicking on the Files changed tab you'll be able to see diffs of the code changes.  You can add comments at specific lines by clicking the little plus button near the line numbers. You should always take a look at the diffs before merging.
 
 Back on the Conversation tab, there will be an area that will let you know if the pull request can be merged without conflicts.  If you think the code changes are good ones, and there are no merge conflicts, you can click the green button to merge the pull request.  In the rare occasion that this space indicates that there will be merge conflicts, you should not merge. Let the submitter know that there are conflicts.  Usually this is because someone forgot to fetch and rebase.  They will be responsible for fixing their code to make sure there are no conflicts, and then they will resubmit their pull request.
 
+## After the merge
+After your code has been merged into the team repo, you should do another fetch and rebase from your local master branch to get the merged code back into your local master.
+After you've done that, you can clean up locally by deleting the branch you used for your code change.  This command will delete a branch:
+
+```bash
+git branch -d branchName
+```
 
 
 
