@@ -1,6 +1,5 @@
 # ForgeGitHubFlow
-Practice Repo for Forge Team's GitHub flow
-
+Practice Repo for Forge Team's GitHub flow.  You can make changes to the HelloGitHub.html file to practice using the Git commands for the workflow.
 # Getting Set Up
 
 ## Step 1 - Getting Set Up: Fork the repo
